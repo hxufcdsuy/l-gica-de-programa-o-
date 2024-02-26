@@ -1,17 +1,36 @@
 programa {
   funcao inicio() {
-    // declaração de variáveis
+    inteiro primeironumero,segundonumero,media,produto,soma
 
-    real base, altura, area
-    
-   //mostra de dados 
-   escreva ("\nQual a altura  do seu triângulo:")
-   leia (altura)
-   escreva("\nQual a base do triângulo: ")
-   leia(base)
-   //calculo da area
-   area=  (base * altura)/2 
-   escreva("a área do triângulo: ", area)
+  escreva("digite o valor:")
   
+  leia(primeironumero)
+
+  escreva("Digite o segundo valor:")
+
+  leia(segundonumero)
+
+soma = (primeironumero + segundonumero)
+
+produto = (primeironumero * segundonumero)
+
+media = (primeironumero + segundonumero)/2
+
+escreva("\no valor da soma é:" , soma)
+
+escreva("\no valor do produto: " , produto)
+
+escreva("\no valor da média:" , media)
+ 
+    
+    se(primeironumero > segundonumero) {escreva ("\no valor 1 e maior que 0 valor 2") leia(primeironumero) leia(segundonumero)}
+
+ 
+ 
+ senao {escreva("\nvalor 2 é maior que o valor 1") leia (segundonumero) leia (primeironumero)}
+
+
+
+
   }
 }

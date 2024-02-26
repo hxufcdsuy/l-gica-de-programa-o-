@@ -1,31 +1,14 @@
 programa {
-  funcao inicio() {
-    cadeia nome
-    caracter sexo  
-    inteiro idade 
-    real peso 
-    //soliçitação dos dados do usuário
-  escreva ("Digite seu nome:")
-  leia (nome)
-  
-   escreva ("Digite seu sexo - utilize M ou F:")
-    leia(sexo)
-   
-    escreva ("Digite sua idade:")
-    leia(idade)
+  funcao inicio() { inteiro valor
+  escreva ("digite o valor:")
+  leia(valor)
+se(valor == 10) 
+{escreva ("igual ou maior que 10")}
 
-    escreva("Digite seu peso:")
-    leia (peso)
 
-    //Exibindo dados do usuário
-    //limpa o terminal,apagando o conteúdo exibido anteriomente
-    limpa()
-    escreva("==exibindo dados para o usuário==")
-    escreva("\nnome:",nome)
-    escreva("\nsexo:", sexo)
-    escreva("\nidade:", idade)
-    escreva("\npeso:",peso)
-    
+senao {escreva("menor que 10")}
+
+
 
     
   }

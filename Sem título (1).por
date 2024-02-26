@@ -1,29 +1,34 @@
 programa {
-  funcao inicio() {
-    // Declaração de variáveis
-    real primeiroNumero, segundoNumero
-    real soma, subtracao, multiplicacao, divisao
+  funcao inicio() {//variaveis
+  cadeia nome
+  real media
+  real nota1,nota2,nota3
+  inteiro idade
+  
+  //dados
+    escreva ("digite seu nome:")
 
-    //solicitando dados para o usuário.
-    escreva("Digite o primeiro número")
-    leia(primeiroNumero)
-    escreva("DFigite o segundo número")
-    leia(segundoNumero)
-    // realizar cálculos
-    soma =  primeiroNumero + segundoNumero
-    subtracao = primeiroNumero - segundoNumero
-    multiplicacao = primeiroNumero * segundoNumero
-    divisao = primeiroNumero / segundoNumero
-   
+    leia(nome)
+    escreva("digite sua idade:")
 
-    //exibindo resultados para o usuário
-    limpa()
-      escreva("== Exibindo resultados")
-      escreva("\n primeiro número digitado é:",primeiroNumero)
-      escreva("\n segubdo número digitado é:",segundoNumero)
-      escreva("\n a soma de dois números é:",soma)
-      escreva("\n a subtracao de dois números é:",subtracao)
-      escreva("\n a multiplicação de dois números é:",multiplicacao) 
-      escreva ("\n a divisão de dois números é;", divisao)
+    leia(idade)
+    escreva("qual o valor da nota 1:")
+
+    leia(nota1)
+    escreva("qual o valor da nota 2:")
+
+    leia(nota2)
+    escreva("qual o valor da nota 3:")
+
+    leia(nota3)
+//resultado
+    
+      escreva ("Cálculo de media")
+
+        media = (nota1 + nota2 + nota3)/3
+        
+          escreva("  A média do aluno é:", media)
+  se (media >=7 ) {escreva("aluno aprovado")}
+  senao{escreva("aluno reprovado")}    
   }
 }
