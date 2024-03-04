@@ -1,36 +1,70 @@
 programa {
-  funcao inicio() {
-    inteiro primeironumero,segundonumero,media,produto,soma
+  funcao inicio() { inteiro meses_do_ano
 
-  escreva("digite o valor:")
-  
-  leia(primeironumero)
+   escreva("=== meses do ano ===")
 
-  escreva("Digite o segundo valor:")
-
-  leia(segundonumero)
-
-soma = (primeironumero + segundonumero)
-
-produto = (primeironumero * segundonumero)
-
-media = (primeironumero + segundonumero)/2
-
-escreva("\no valor da soma é:" , soma)
-
-escreva("\no valor do produto: " , produto)
-
-escreva("\no valor da média:" , media)
- 
+   escreva("digite o numero do mês:")
+   leia(meses_do_ano)
+   
+   escolha (meses_do_ano) {
     
-    se(primeironumero > segundonumero) {escreva ("\no valor 1 e maior que 0 valor 2") leia(primeironumero) leia(segundonumero)}
+    caso 1 :
 
- 
- 
- senao {escreva("\nvalor 2 é maior que o valor 1") leia (segundonumero) leia (primeironumero)}
+    escreva("janeiro")
+    pare
+
+    caso 2 :
+
+    escreva("feveiro")
+
+    pare
+
+    caso 3:
+
+    escreva("março")
+     pare
+    caso 4:
+    escreva("abril")
+    pare
+    caso 5: escreva("maio")
+     pare
+    caso 6:escreva ("junho")
+    pare
+
+    caso 7:escreva ("julho")
+     pare
+    
+
+    caso 8:escreva("agosto")
+    pare
+
+
+    caso 9:escreva ("setembro")
+    
+    pare
+    
+    caso 10:escreva ("outubro")
+    
+    pare
+   
+    caso 11: escreva("novembro")
+
+   
+     pare
+   
+     caso 12: escreva("dezembro")
+    
+     pare
+     
+     caso contrario:
+     escreva("operção inválida")
+     
 
 
 
 
+
+   }
+    
   }
 }
